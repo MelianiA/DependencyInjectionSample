@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+Transient : @ViewBag.T1ransient.OperationId  <br/>
+Scoped : @ViewBag.S1coped.OperationId  <br/>
+Singleton : @ViewBag.S1ingleton.OperationId  <br/>
+
+
+<br/>
+<br/>
+
+Transient : @ViewBag.T2ransient.OperationId  <br/>
+Scoped : @ViewBag.S2coped.OperationId  <br/>
+Singleton : @ViewBag.S2ingleton.OperationId  <br/>
+<hr/>
+
+
+
+<h2>Transient :</h2>
+<p>une instance du service ne sera jamais partagée à plus d’un objet par le conteneur d’IoC.</p>
+
+
+<h2>Scoped :</h2>
+<p>Pour une requête HTTP vers l’application, tous les objets qui utilisent le service recevront la même instance de ce dernier du conteneur d’IoC..</p>
+
+
+<h2>Singleton :</h2>
+<p>Singleton est utilisé pour un service qui doit être instancié une seule fois et dont la même instance sera utilisée par tous les composants de l’application qui en auront besoin. Le service est créé pour le premier composant qui en fait la demande, et utilisé pour le reste..</p>
